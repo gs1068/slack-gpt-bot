@@ -78,20 +78,13 @@ func handleMessageEvent(ctx context.Context, w http.ResponseWriter, usecase *use
 
 	ts := getThreadTimestamp(event.TimeStamp, event.ThreadTimeStamp)
 
-	switch {
-	case event.ChannelType == "im":
+	if event.ChannelType == "im" || event.ThreadTimeStamp != "" {
 		if err := usecase.ProcessMessages(ctx, event.Channel, ts); err != nil {
 			log.Fatal().Err(err).Msg("failed usecase.ProcessMessages")
-			httpError(w, "failed to process direct message", http.StatusInternalServerError, err)
+			httpError(w, "failed to process message", http.StatusInternalServerError, err)
 			return
 		}
-	case event.ThreadTimeStamp != "":
-		if err := usecase.ProcessMessages(ctx, event.Channel, ts); err != nil {
-			log.Fatal().Err(err).Msg("failed usecase.ProcessMessages")
-			httpError(w, "failed to process thread messages", http.StatusInternalServerError, err)
-			return
-		}
-	default:
+	} else {
 		log.Info().Msg("unsupported message event")
 		w.WriteHeader(http.StatusNoContent)
 		return
