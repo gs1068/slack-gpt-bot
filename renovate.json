@@ -1,3 +1,5 @@
 {
-  "automerge": true
+  "automerge": true,
+  "automergeType": "pr", 
+  "requiredStatusChecks": null
 }
