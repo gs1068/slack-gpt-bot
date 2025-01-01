@@ -3,7 +3,7 @@ module github.com/gs1068/slack-gpt-bot
 go 1.22.5
 
 require (
-	github.com/go-chi/chi/v5 v5.1.0
+	github.com/go-chi/chi/v5 v5.2.0
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.33.0
 	github.com/sashabaranov/go-openai v1.35.7
