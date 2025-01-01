@@ -6,7 +6,7 @@ require (
 	github.com/go-chi/chi/v5 v5.1.0
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.33.0
-	github.com/sashabaranov/go-openai v1.35.7
+	github.com/sashabaranov/go-openai v1.36.1
 	github.com/slack-go/slack v0.15.0
 	golang.org/x/oauth2 v0.24.0
 	golang.org/x/sync v0.9.0
