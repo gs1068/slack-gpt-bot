@@ -11,7 +11,7 @@ require (
 	github.com/sashabaranov/go-openai v1.40.1
 	github.com/slack-go/slack v0.17.0
 	golang.org/x/oauth2 v0.30.0
-	golang.org/x/sync v0.14.0
+	golang.org/x/sync v0.15.0
 	google.golang.org/api v0.236.0
 )
 
