@@ -9,7 +9,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.34.0
 	github.com/sashabaranov/go-openai v1.40.1
-	github.com/slack-go/slack v0.17.0
+	github.com/slack-go/slack v0.17.1
 	golang.org/x/oauth2 v0.30.0
 	golang.org/x/sync v0.15.0
 	google.golang.org/api v0.236.0
