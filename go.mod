@@ -1,6 +1,6 @@
 module github.com/gs1068/slack-gpt-bot
 
-go 1.24.0
+go 1.25
 
 toolchain go1.26.0
 
@@ -9,7 +9,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.34.0
 	github.com/sashabaranov/go-openai v1.41.2
-	github.com/slack-go/slack v0.17.3
+	github.com/slack-go/slack v0.18.0
 	golang.org/x/oauth2 v0.35.0
 	golang.org/x/sync v0.19.0
 	google.golang.org/api v0.267.0
