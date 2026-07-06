@@ -5,7 +5,7 @@ go 1.25.8
 toolchain go1.26.4
 
 require (
-	github.com/go-chi/chi/v5 v5.3.0
+	github.com/go-chi/chi/v5 v5.3.1
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.35.1
 	github.com/sashabaranov/go-openai v1.41.2
