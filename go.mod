@@ -2,7 +2,7 @@ module github.com/gs1068/slack-gpt-bot
 
 go 1.25.8
 
-toolchain go1.27.0
+toolchain go1.27.1
 
 require (
 	github.com/go-chi/chi/v5 v5.3.2
