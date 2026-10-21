@@ -12,7 +12,7 @@ require (
 	github.com/slack-go/slack v0.30.1
 	golang.org/x/oauth2 v0.37.0
 	golang.org/x/sync v0.24.0
-	google.golang.org/api v0.306.0
+	google.golang.org/api v0.307.0
 )
 
 require (
